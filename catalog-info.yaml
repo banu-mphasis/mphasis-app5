@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mphasis-app5
+  title: mphasis-app5
+  annotations:
+    circleci.com/project-slug: github/banu-mphasis/mphasis-app5
+    github.com/project-slug: banu-mphasis/mphasis-app5
+    sonarqube.org/project-key: banu-mphasis_mphasis-app5
+    backstage.io/kubernetes-id: mphasis-app5
+    argocd/app-name: mphasis-app5
+    prometheus.io/rule: container_memory_usage_bytes{pod=~"mphasis-app5-.*"}|pod,rate(container_cpu_usage_seconds_total{pod=~"mphasis-app5-.*"}[5m])|pod
+    grafana/overview-dashboard: 'https://banuparasuraman.grafana.net/d/ae9e0d2rwnta8d/docker-desktop-spring?orgId=1&from=now-5m&to=now&timezone=browser&kiosk'
+  tags:
+    - spring-boot
+    - java
+    - maven
+    - circleci
+    - renovate
+    - sonarqube
+spec:
+  type: service
+  owner: banu.parasuraman@mphasis.com
+  lifecycle: experimental
