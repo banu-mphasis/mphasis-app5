@@ -10,7 +10,7 @@ metadata:
     backstage.io/kubernetes-id: mphasis-app5
     argocd/app-name: mphasis-app5
     prometheus.io/rule: container_memory_usage_bytes{pod=~"mphasis-app5-.*"}|pod,rate(container_cpu_usage_seconds_total{pod=~"mphasis-app5-.*"}[5m])|pod
-    grafana/overview-dashboard: 'http://34.56.89.92/d/deccs0jxtt1xcb/kubernetes-nodes-metrics?orgId=1&from=now-5m&to=now&timezone=browser&kiosk'
+    grafana/overview-dashboard: 'http://34.56.89.92/d/fecyd4cgiwzy8f/kubernetes-nodes?orgId=1&from=now-5m&to=now&timezone=browser&kiosk'
     backstage.io/techdocs-ref: dir:.
   tags:
     - spring-boot
