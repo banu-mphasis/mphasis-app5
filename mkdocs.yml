@@ -1,0 +1,7 @@
+site_name: 'mphasis app 5'
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core
